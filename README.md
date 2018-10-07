@@ -17,7 +17,3 @@ esta pagina, empresa, producto es sin fin de lucro y solo con fin demostrativo.
 
 [© VRTICAL 2018](https://blackvanta.github.io/VRapel/)
 
-
-
-
-
