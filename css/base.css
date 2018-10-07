@@ -190,7 +190,8 @@ button:focus {
 
 .menu__toggle-inner--close {
 	opacity: 0;
-	color: var(--color-menu-item);;
+	color: var(--color-menu-item);
+	text-align: right;
 }
 
 .menu__item {
@@ -272,6 +273,12 @@ button:focus {
 
 .section__facts-item {
 	margin: 0 0 2.5rem 0;
+	visibility: hidden;
+}
+
+.section__facts-item.section__facts-item--clickable{
+	visibility: visible;
+
 }
 
 .section__facts-img {
