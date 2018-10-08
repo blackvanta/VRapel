@@ -263,6 +263,24 @@ button:focus {
 	background-position: 50% 50%;
 }
 
+.section__img-inner.logo_vrtical {
+	background-repeat: no-repeat;
+	background-size: 124px;
+	width: 132px;
+	position: relative;
+	top: -23px;
+}
+
+.section__img-inner.logo_vrapel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    position: relative;
+    top: -14px;
+    height: 110px;
+}
+
+
 .section__facts {
 	padding: 2rem;
 	margin: 0;
@@ -585,6 +603,7 @@ button:focus {
 		left: -2vw;
 		position: relative;
 		z-index: 100;
+		mix-blend-mode: hue;
 	}
 	.section__img {
 		height: auto;
