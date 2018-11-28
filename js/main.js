@@ -1,13 +1,4 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2018, Codrops
- * http://www.codrops.com
- */
+
 {
 	// From https://davidwalsh.name/javascript-debounce-function.
 	function debounce(func, wait, immediate) {
@@ -189,10 +180,10 @@
 				less: this.DOM.factsContainer.querySelector('.facts__toggle > .facts__toggle-inner--less'),
 			};
 			this.DOM.previewCloseCtrl = this.DOM.factsContainer.querySelector('.button-contentclose');
-			this.DOM.pagination = this.DOM.el.querySelector('.sections__index .sections__index-inner');
-			this.DOM.navigation = this.DOM.el.querySelector('.sections__nav');
-			this.DOM.navigation.prevCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--prev');
-			this.DOM.navigation.nextCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--next');
+			// this.DOM.pagination = this.DOM.el.querySelector('.sections__index .sections__index-inner');
+			// this.DOM.navigation = this.DOM.el.querySelector('.sections__nav');
+			// this.DOM.navigation.prevCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--prev');
+			// this.DOM.navigation.nextCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--next');
 			this.DOM.entries = Array.from(this.DOM.el.querySelectorAll('.section'), entry => new Entry(entry));
 			this.entriesTotal = this.DOM.entries.length;
 			this.currentPos = 0;
@@ -227,10 +218,10 @@
 		}
 		initEvents() {
 			// Navigation
-			this.onPrevClick = () => this.navigate('prev');
-			this.onNextClick = () => this.navigate('next');
-			this.DOM.navigation.prevCtrl.addEventListener('click', this.onPrevClick);
-			this.DOM.navigation.nextCtrl.addEventListener('click', this.onNextClick);
+			// this.onPrevClick = () => this.navigate('prev');
+			// this.onNextClick = () => this.navigate('next');
+			// this.DOM.navigation.prevCtrl.addEventListener('click', this.onPrevClick);
+			// this.DOM.navigation.nextCtrl.addEventListener('click', this.onNextClick);
 			
 			// Main menu
 			this.DOM.menu.menuCtrls.toggle.addEventListener('click', () => this.toggleMenu());
