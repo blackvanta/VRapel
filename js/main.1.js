@@ -46,22 +46,22 @@
         init() {
 			// DOM elements:
 			// title
-			this.DOM.title = this.DOM.el.querySelector('.section__content > .section__title');
-			charming(this.DOM.title);
-			this.DOM.titleLetters = this.DOM.title.querySelectorAll('span');
-			// description
-			this.DOM.description = this.DOM.el.querySelector('.section__content > .section__description');
-			// image
-			this.DOM.image = this.DOM.el.querySelector('.section__img > .section__img-inner');
-			// more box
-			this.DOM.more = this.DOM.el.querySelector('.section__more > .section__more-inner');
-			// expander
-			this.DOM.expander = this.DOM.el.querySelector('.section__expander');
-			// facts
-			this.DOM.facts = {
-				wrapper: this.DOM.el.querySelector('.section__facts'),
-				items: Array.from(this.DOM.el.querySelectorAll('.section__facts > .section__facts-item'))
-			};
+			// this.DOM.title = this.DOM.el.querySelector('.section__content > .section__title');
+			// // charming(this.DOM.title);
+			// this.DOM.titleLetters = this.DOM.title.querySelectorAll('span');
+			// // description
+			// this.DOM.description = this.DOM.el.querySelector('.section__content > .section__description');
+			// // image
+			// this.DOM.image = this.DOM.el.querySelector('.section__img > .section__img-inner');
+			// // more box
+			// this.DOM.more = this.DOM.el.querySelector('.section__more > .section__more-inner');
+			// // expander
+			// this.DOM.expander = this.DOM.el.querySelector('.section__expander');
+			// // facts
+			// this.DOM.facts = {
+			// 	wrapper: this.DOM.el.querySelector('.section__facts'),
+			// 	items: Array.from(this.DOM.el.querySelectorAll('.section__facts > .section__facts-item'))
+			// };
 		}
 		show(direction) {
 			this.isHidden = false;
@@ -193,28 +193,28 @@
 			this.initEvents();
 		}
 		layout() {
-			this.currentEntry = this.DOM.entries[this.currentPos];
-			const factEl = this.currentEntry.DOM.facts.items[0];
-			const factHeight = factEl.getBoundingClientRect().height + parseFloat(window.getComputedStyle(factEl).marginBottom);
-			const paddingFactsStyle = window.getComputedStyle(this.currentEntry.DOM.facts.wrapper);
-			const paddingFacts = parseFloat(paddingFactsStyle.paddingTop) + parseFloat(paddingFactsStyle.paddingBottom);
+			// this.currentEntry = this.DOM.entries[this.currentPos];
+			// const factEl = this.currentEntry.DOM.facts.items[0];
+			// const factHeight = factEl.getBoundingClientRect().height + parseFloat(window.getComputedStyle(factEl).marginBottom);
+			// const paddingFactsStyle = window.getComputedStyle(this.currentEntry.DOM.facts.wrapper);
+			// const paddingFacts = parseFloat(paddingFactsStyle.paddingTop) + parseFloat(paddingFactsStyle.paddingBottom);
 			
-			this.factsTranslation = win.height - 2 * factHeight - paddingFacts;
-			for ( let i = 0; i <= this.entriesTotal - 1; ++i ) {
-				const entry = this.DOM.entries[i];
-				entry.DOM.expander.style.transform = `scale3d(0.54,1,1) translate3d(0px,${this.factsTranslation}px,0px)`;
-				for ( let j = 0, len = entry.DOM.facts.items.length; j <= len - 1; ++j ) {
-					entry.DOM.facts.ty = this.factsTranslation;
-					const item = entry.DOM.facts.items[j];
-					item.style.transform = `translate3d(0px,${this.factsTranslation}px,0px)`;
-					if ( j > 1 ) {
-						item.style.opacity = 0;
-					}
-					else if ( i === this.currentPos ){
-						item.style.opacity = 1;
-					}
-				}
-			}
+			// this.factsTranslation = win.height - 2 * factHeight - paddingFacts;
+			// for ( let i = 0; i <= this.entriesTotal - 1; ++i ) {
+			// 	const entry = this.DOM.entries[i];
+			// 	entry.DOM.expander.style.transform = `scale3d(0.54,1,1) translate3d(0px,${this.factsTranslation}px,0px)`;
+			// 	for ( let j = 0, len = entry.DOM.facts.items.length; j <= len - 1; ++j ) {
+			// 		entry.DOM.facts.ty = this.factsTranslation;
+			// 		const item = entry.DOM.facts.items[j];
+			// 		item.style.transform = `translate3d(0px,${this.factsTranslation}px,0px)`;
+			// 		if ( j > 1 ) {
+			// 			item.style.opacity = 0;
+			// 		}
+			// 		else if ( i === this.currentPos ){
+			// 			item.style.opacity = 1;
+			// 		}
+			// 	}
+			// }
 		}
 		initEvents() {
 			// Navigation
@@ -231,10 +231,10 @@
 			
 			// Facts (clickable facts)
 			for ( let i = 0; i <= this.entriesTotal - 1; ++i ) {
-				const entry = this.DOM.entries[i];
-				entry.DOM.facts.items
-					 .filter(fact => fact.classList.contains('section__facts-item--clickable'))
-					 .forEach(clickableFact => clickableFact.addEventListener('click', () => this.preview(clickableFact.dataset.gallery)));
+				// const entry = this.DOM.entries[i];
+				// entry.DOM.facts.items
+				// 	 .filter(fact => fact.classList.contains('section__facts-item--clickable'))
+				// 	 .forEach(clickableFact => clickableFact.addEventListener('click', () => this.preview(clickableFact.dataset.gallery)));
 			}
 			
 			// Close preview
