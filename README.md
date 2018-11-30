@@ -2,7 +2,7 @@
 VRAPEL es un proyecto para poder entrenar Rápel en un ambiente controlado, de esta manera poder aprender
 y lograr tener el conocimiento basico para poder ir a practicar Rápel en condiciones mas extremas.
 
-Utilizamos HTC VIVE como control para VR.
+Utilizamos Oculus como control para VR.
 
 ## Credits
 
