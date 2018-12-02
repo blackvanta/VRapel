@@ -270,7 +270,7 @@ button:focus {
   background-size: 124px;
   width: 132px;
   position: relative;
-  top: -14px;
+  top: -23px;
 }
 
 .section__img-inner.logo_vrapel {
@@ -424,7 +424,7 @@ button:focus {
 }
 
 .section__more-inner--bg1 {
-  background-color: #ecd9d3;
+  background-color: var(--color-bg-more-1);
 }
 
 .section__more-inner--bg2 {
@@ -460,7 +460,7 @@ button:focus {
   width: 2rem;
   height: 1.25rem;
 }
-
+/* 
 @media screen and (min-width: 55em) and (min-height: 40em) {
   .sections {
     height: 100vh;
@@ -712,11 +712,11 @@ button:focus {
     border: 2px solid;
     padding: 0.5rem;
   }
-}
+} */
 
 .logo img {
   height: 70px;
-  top: -10px;
+  top: 0px;
   position: relative;
 }
 
@@ -765,7 +765,7 @@ button:focus {
   top: 29px;
   left: 50%;
   transform: translate(-50%);
-  font-weight: 600;
+  font-weight: 300;
   font-size: 27px;
 }
 

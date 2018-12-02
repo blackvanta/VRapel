@@ -15,8 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+
     <script>
       document.documentElement.className = "js";
       var supportsCssVars = function() {
@@ -41,6 +41,14 @@
     </script>
   </head>
   <body class="loading">
+    <svg class="hidden">
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <title>close</title>
+        <path
+          d="M21 4.565L19.435 3 12 10.435 4.565 3 3 4.565 10.435 12 3 19.435 4.565 21 12 13.565 19.435 21 21 19.435 13.565 12z"
+        />
+      </symbol>
+    </svg>
     <main>
       <div class="sections">
         <header class="sections__header">
@@ -173,7 +181,8 @@
             </li>
             <li
               class="section__facts-item section__facts-item--clickable"
-              data-gallery="gallery1" onclick="location.href ='gallery.html'"
+              data-gallery="gallery1"
+              onclick="location.href ='gallery.html'"
             >
               <div class="section__facts-img">
                 <img src="img/mountains_01.png" alt="Some image" />
@@ -325,8 +334,7 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/charming.min.js"></script>
     <script src="js/anime.min.js"></script>
-	<script src="js/main.js"></script>
-    <script src="js/app.js" ></script>
-	
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
